@@ -54,7 +54,7 @@ body {
   h1 {
     text-align: center;
     color: #fff;
-    font-size: 7em;
+    font-size: 6vw;
     letter-spacing: 8px;
     font-family: 'Press Start 2P';
     font-weight: 400;
@@ -81,7 +81,7 @@ body {
   h2 {
     text-align: center;
     color: #fff;
-    font-size: 2.1em;
+    font-size: 2.1vw;
     letter-spacing: 8px;
     font-family: 'Press Start 2P';
     font-weight: 400;
@@ -107,7 +107,7 @@ body {
   h3 {
     text-align: center;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     letter-spacing: 8px;
     font-family: 'Press Start 2P';
     font-weight: 400;
