@@ -47,7 +47,7 @@ body {
   }
   
   #small-container {
-    width: 70vw;
+    width: auto;
     margin: 5vw auto;
   }
   
@@ -82,7 +82,7 @@ body {
     text-align: center;
     color: #fff;
     font-size: 2.1vw;
-    letter-spacing: 8px;
+    letter-spacing: 2px;
     font-family: 'Press Start 2P';
     font-weight: 400;
     /*Create overlap*/
