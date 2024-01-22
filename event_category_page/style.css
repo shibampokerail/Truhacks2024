@@ -1,0 +1,116 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+}
+
+body {
+    margin: 0;
+    background-image: url('back2.png');
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+/* Header Styles */
+.about {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Theme Section Styles */
+.theme {
+    margin: 20px 30px;
+    background-color: rgba(63, 59, 59, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.about-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    padding: 20px 50px;
+}
+
+/* Category Section Styles */
+.about-col-2 {
+    background-color: rgba(63, 59, 59, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 30px;
+    margin-top: 80px;
+}
+
+.sub-title {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.tab-titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 40px;
+    margin-top: 20px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: purple;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents u {
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hover Effect for Cards */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
