@@ -2,8 +2,8 @@ body {
     
     background-color: black;
    /* background-image: url('https://i.ytimg.com/vi/XpbbSDYpRDw/maxresdefault.jpg');*/
-      background-size: cover; /* Ensure the background image covers the entire container */
-      background-position: center; /* Center the background image */
+      background-size: cover;
+      background-position: center;
       background-repeat: no-repeat; 
   }
   
