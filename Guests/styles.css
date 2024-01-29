@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    height: 100vh;
+    background: black;
+    font-family: Helvetica, sans-serif;
+    cursor: cell;
+}
+.gif img{
+    height: 200px;
+    width: 200px;
+    z-index: 11;
+}
+
+.gif img:hover{
+    width: 210px;
+    height: 210px;
+    
+}
+
+.category{
+    margin:7%;
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    animation: 1s text infinite;
+   
+}
+
+      .category:hover{
+        
+        cursor: cell;
+      }
+
+span{
+    color: red;
+}
+        
+@keyframes text{
+    0%{ 
+        
+        
+        color: #74ee15;
+
+    }
+    20%{
+        
+        color: black;
+    }
+    80%{
+         
+    }
+
+    100%{
+        
+        color:beige;
+    }
+}
+
+.bla{
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    margin: 7%;
+    padding: 2% 2%;
+    border-radius: 2rem;
+    position: relative;
+    background-color: black;
+    background-size: 400%;
+    width: 90%;
+    height: 300px;
+}
+
+.bla::before{
+    content: "";
+    position: absolute;
+    left: -5px;
+    top:-5px;
+    background:  linear-gradient(45deg, #4deeea, #74ee15, #ffe700, purple, pink, red, blue,red,orange,yellow);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: animate 5s linear infinite;
+    border-radius: 2rem;
+
+}
+.bla::after{
+    content: " ";
+   filter: blur(40px);
+    opacity: 50%;
+}
+
+.container{
+    width: 200px;
+    height: 300px;
+    margin: 10px 2%; 
+    color: aliceblue;
+    
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    left:-2px;
+    top: -2px;
+    background: linear-gradient(45deg, #4deeea, #74ee15, #ffe700, purple, pink, red, blue,red,orange,yellow);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -2;
+    animation: animate 5s linear infinite;
+    border-radius: 2rem;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0 0;
+    }
+    50%{ background-position: 95% 0;
+
+    }
+    100%{
+         background-position: 0 0;
+    }
+}
+
+.card::after{
+    content: " ";
+    filter: blur(40px);
+    opacity: 0.99;
+}
+
+.card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin:10px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+
+.front, .back ,img{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px rgba(50,50,50,0.25);
+    backface-visibility: hidden;
+}
+
+.container:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+    
+}
+
+.back{
+    background-color: rgba(0,0,0,0.9);
+    transform: rotatey(180deg);
+    z-index: 2;
+    
+}
+
+
+.card h1{
+    text-align: center;
+    margin:15px;
+    margin-bottom: 25%;
+}
+
+.card p{
+    size: 15px;
+    margin: 0 5px;
+}
+
+.back img{
+    z-index: -1;
+}
+
