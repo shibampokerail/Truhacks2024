@@ -12,9 +12,10 @@ body{
     cursor: cell;
 }
 .gif img{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     z-index: 11;
+    margin-top: 30px;
 }
 
 .gif img:hover{
@@ -73,13 +74,13 @@ span{
     justify-content: space-evenly;
     
     margin: 7%;
-    padding: 2% 2%;
+    padding: 5% 2%;
     border-radius: 2rem;
     position: relative;
     background-color: black;
     background-size: 400%;
     width: 90%;
-    height: 300px;
+   
 }
 
 .bla::before{
@@ -190,3 +191,8 @@ span{
     z-index: -1;
 }
 
+/* ---------------------------sponsers--------------------------- */
+
+.bla #sponsers{
+    margin-bottom: 15px;
+}
